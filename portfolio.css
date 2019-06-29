@@ -70,12 +70,12 @@ body {
 }
 @media only screen and (min-width: 1200px){
   .text{
-      font-size: 3em;
+      font-size: 2em;
   }
 }
 @media only screen and (min-width: 2000px){
   .text{
-      font-size: 6em;
+      font-size: 3em;
   }
 }
 
@@ -94,7 +94,7 @@ body {
 .projects {
  height:100vh;
   padding-top: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   font-family: 'Rubik Mono One', sans-serif;
   color: white;
 
@@ -167,4 +167,26 @@ body {
 .about2 {
   font-family: 'Montserrat', sans-serif;
 
+}
+
+h5 {
+  color: blue;
+}
+
+.card-text {
+  color: blue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#cards{
+  margin: 20px;
+ }
+
+.card-body {
+  text-align: center;
+  
+}
+
+.bottom {
+  margin: 20px;
 }
