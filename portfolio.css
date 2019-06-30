@@ -188,3 +188,50 @@ body {
   padding-top: 50px;
 }
 }
+
+
+
+.about2 {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h5 {
+  color: blue;
+}
+
+.card-text {
+  color: blue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+  margin: 20px;
+ }
+
+.card-body {
+  text-align: center;  
+}
+
+.bottom {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  display: block;
+}
+
+#virtualPet {
+  display: inline-block;
+  width: 200px;
+}
+
+#colourGame {
+  display: inline-block;
+}
+
+img {
+  height: 200px;
+}
+
+#cards {
+  text-align: center;
+}
