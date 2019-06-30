@@ -52,6 +52,7 @@ body {
   .icons{
     margin-top: 100px;
     font-size: 4rem;
+    display: inline-block;
   }
 }
 
@@ -123,21 +124,22 @@ body {
 .about{
   height: 100vh;
   color: white;
+  margin-top: 200px;
 }
 @media only screen and (min-width: 1200px){
   #about{
-    padding-top: 100px;
+    padding-top: 200px;
 }
 }
 
 @media only screen and (min-width: 1200px){
   #projects{
-    padding-top: 100px;
+    padding-top: 200px;
 }
 }
 @media only screen and (min-width: 1200px){
   #about{
-    padding-top: 100px;
+    padding-top: 200px;
 }
 }
 @media only screen and (min-width: 2000px){
@@ -162,6 +164,7 @@ body {
 
 #about{
   font-family: 'Rubik Mono One', sans-serif;
+  margin-top: 100px;
 }
 
 .about2 {
@@ -178,15 +181,32 @@ h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
-#cards{
+.card{
   margin: 20px;
  }
 
 .card-body {
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .bottom {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#virtualPet {
+  display: inline-block;
+  width: 200px;
+}
+
+#colourGame {
+  display: inline-block;
+}
+
+img {
+  height: 200px;
+}
+
+#cards {
+  text-align: center;
 }
