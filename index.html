@@ -1,92 +1,69 @@
-
 <!DOCTYPE html>
 <html>
-
 <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Benny the virtual blob</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="portfolio.css">
-
-  <script src="https://kit.fontawesome.com/de2b0ad954.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="virtualpet.css">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de2b0ad954.js"></script>
 </head>
-
-
 <body>
-  <!-- A grey horizontal navbar that becomes vertical on small screens -->
-  <nav class="navbar justify-content-center bg-light fixed-top navbar-expand navbar-custom" id="blue">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">PROJECTS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">ABOUT/CONTACT</a>
-      </li>
-    </ul>
-  </nav>
+  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                          <i class="fas fa-skull-crossbones"></i><br>
+                            <p>"Oh, no! You killed Benny!"<br>
+                               "He was <span id="dead">x</span> days young"</p>
+                              </div>
+                            </div>
+  <div class="container">
+    <h1>Benny the Blob</h1>
 
-  <div class="container" id="block1">
-    <h1 class="text">Hello. My name's <span class="pink">Lorna Roberts</span> and I'm a front-end developer looking for my first job.<br><br>I can code using HTML, CSS and JavaScript.</h1>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/lorna-roberts/"><i class="fab fa-linkedin"></i></a><a href="mailto:lornaroberts99@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i><a/>
-    </div>
-    <div class="bottom icons">
-      <a href="#projects"><i class="fas fa-angle-double-down"></i></a>
-    </div>
-</div>
-   
+      <p>Look after Benny, the blob. Play with him, feed him, care for him when he's sick. But if you ignore him for too long, he'll die. How long will you be able to keep him alive?</p>
+
+<button type="button" class="btn reset">Restart</button>
+  </div>
+
+  <div class="action">
+     <img id="age" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857600/virtual%20pet/item-box.png" alt="window for life span">
+        <img id="backing" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561670551/virtual%20pet/little-board.png" alt="pin board image">
+           <div id="bennyNormal" class="start"></div>
+               <p id="ageStatus" class="start" ><span id="days">0</span> days old</p>
+                  <img id="heart" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561725918/virtual%20pet/l1.png"  alt="health points image">
+                      <img id="star" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561725934/virtual%20pet/s1.png" alt="happy points image">
+      
+                         <img id="hungry" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561725898/virtual%20pet/h1.png" alt="hunger points image"> 
+    
+
+                              <div id="tasks">
+                                   <img id="medicine" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857719/virtual%20pet/medicene.png" alt="medicine">
+                                       <img id="food" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857661/virtual%20pet/sandwich.png" alt="food">
+                                          <img id="toys" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857776/virtual%20pet/gamesbox.png" alt="toys">
+                                                <img id="drink" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857689/virtual%20pet/red-smoothie.png" alt="glass of juice"> 
+    
+                              </div>
+
+                  
+  
   
 
-  <div class="projects">
-    <h2 class="projects2" id="projects">Projects</h2>
-    <div id="cards">
-      <div id="colourGame" class="card" style="width: 40%">
-  <img src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561644448/colorgameshot_krgnen.jpg" class="card-img-top" alt="color game screenshot">
-  <div class="card-body">
-    <h5 class="card-title">JavaScript Colour Game</h5>
-    <p class="card-text">Used JavaScript events to create a click and match game to test RGB knowledge.</p>
-    <a href="https://codepen.io/JammyPiece/full/QXOqLO" class="btn btn-primary" target="_blank" and rel="noopener noreferrer">CodePen</a>
-  </div>
 </div>
-        <div id="virtualPet" class="card" style="width: 40%">
-  <img src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561919947/benny_a10nnd.jpg" class="card-img-top" alt="virtual pet game screenshot">
-  <div class="card-body">
-    <h5 class="card-title">Virtual Pet (in progress)</h5>
-    <p class="card-text">Using timers, animations and loops to create virtual pet simulator.</p>
-    <a href="https://codepen.io/JammyPiece/full/dBZaMP" class="btn btn-primary" target="_blank" and rel="noopener noreferrer">CodePen</a>
-  </div>
-</div>
-      
-    </div>
-    
-    
-    
-    <div class="bottom icons">
-      <a href="#about"><i class="fas fa-angle-double-down"></i></a>
-    </div>
-  </div>
 
-  <div class="container about">
-    <h2 class="projects2" id="about">About Me</h2>
-    <div class="icons">
-     <a href="https://www.linkedin.com/in/lorna-roberts/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="mailto:lornaroberts99@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i></a>
-    </div> 
-    <p class="about2">I'm a self-taught front-end developer based in Perth, Scotland. I caught the coding bug after working some years in teaching, administration and customer service. I have a full, clean driving licence. </p>
-    <h3 class="head">Skills</h3>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS</li>
-      <li>JavaScript- Bootstrap</li>
-    </ul>
-    <h3 class="head">Certifications</h3>
-    <p>2019- freeCodeCamp Responsive Web Design</p>
-    <p>2019(In-progress)-freeCodeCamp Javascript Algorithms And Data Structures</p>
-    <p>2019(In-progress)-Udemy Web Developer Bootcamp course</p>
-    <P></p>
-  </div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="messaround.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
 </body>
+</html>
