@@ -1,69 +1,124 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Benny the virtual blob</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="virtualpet.css">
-    <link href="https://fonts.googleapis.com/css?family=Barriecito|Special+Elite&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/de2b0ad954.js"></script>
-</head>
-<body>
-  <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                          <i class="fas fa-skull-crossbones"></i><br>
-                            <p>"Oh, no! You killed Benny!"<br>
-                               "He was <span id="dead">x</span> days young"</p>
-                              </div>
-                            </div>
-  <div class="container">
-    <h1>Benny the Blob</h1>
-
-      <p>Look after Benny, the blob. Play with him, feed him, care for him when he's sick. But if you ignore him for too long, he'll die. How long will you be able to keep him alive?</p>
-
-<button type="button" class="btn reset">Restart</button>
-  </div>
-
-  <div class="action">
-     <img id="age" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857600/virtual%20pet/item-box.png" alt="window for life span">
-        <img id="backing" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561670551/virtual%20pet/little-board.png" alt="pin board image">
-           <div id="bennyNormal" class="start"></div>
-               <p id="ageStatus" class="start" ><span id="days">0</span> days old</p>
-                  <img id="heart" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561725918/virtual%20pet/l1.png"  alt="health points image">
-                      <img id="star" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561725934/virtual%20pet/s1.png" alt="happy points image">
-      
-                         <img id="hungry" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561725898/virtual%20pet/h1.png" alt="hunger points image"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Heebo|Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+         <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+          <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+          </div>
+      </nav>
+        <h1>Hi. I'm Lorna.</br></h1>
+      <h2>I'm a Front-end Developer from Perth, Scotland.</br> I'm looking for a team. Take a look at my projects and let me know what you think.</h2></br>
+ <div class="btn-group skills" role="group" aria-label="Basic example">
+<button type="button" class="btn btn-outline-light skillpad">HTML/CSS</button>
+  <button type="button" class="btn btn-outline-light skillpad">JavaScript</button>
+      <button type="button" class="btn btn-outline-light">Bootstrap</button>
+    <button type="button" class="btn btn-outline-light">React</button>
+     <button type="button" class="btn btn-outline-light">Node</button>
+     <button type="button" class="btn btn-outline-light">MongoDB</button>
+ </div>
+  <div class="projects">
+    <h3>Projects</h3>
+  <ul class="list-unstyled">
+  <li class="media">
+    <img class="col-4" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1557873945/portfolio%20page/FreeCodeCamp_logo.png" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="col-8">Project 1</h5>
+     This was the problem. This is how i solved the problem. This is the outcome.
+      <div class="row">
+      <p class="col-4">Code</p>
+      <p class="col-4">Site</p>
+      </div>
+    </div>
+  </li> <li class="media">
+    <img class="col-4" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1557873945/portfolio%20page/FreeCodeCamp_logo.png" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="col-8">Project 2</h5>
+      This was the problem. This is how i solved the problem. This is the outcome.
     
-
-                              <div id="tasks">
-                                   <img id="medicine" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857719/virtual%20pet/medicene.png" alt="medicine">
-                                       <img id="food" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857661/virtual%20pet/sandwich.png" alt="food">
-                                          <img id="toys" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857776/virtual%20pet/gamesbox.png" alt="toys">
-                                                <img id="drink" class="start" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1561857689/virtual%20pet/red-smoothie.png" alt="glass of juice"> 
+    <div class="row">
+      <p class="col-4">Code</p>
+      <p class="col-4">Site</p>
+      </div>
+          </div>
+  </li>
+  <li class="media">
+    <img class="col-4" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1557873945/portfolio%20page/FreeCodeCamp_logo.png" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="col-8">Project 3</h5>
+      This was the problem. This is how i solved the problem. This is the outcome.
     
-                              </div>
-
-                  
-  
-  
-
+    <div class="row">
+      <p class="col-4">Code</p>
+      <p class="col-4">Site</p>
+      </div></div>
+  </li>
+  <li class="media">
+    <img class="col-4" src="https://res.cloudinary.com/dytmcam8b/image/upload/v1557873945/portfolio%20page/FreeCodeCamp_logo.png" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="col-8">Project 4</h5>
+      This was the problem. This is how i solved the problem. This is the outcome.
+    
+    <div class="row">
+      <p class="col-4">Code</p>
+      <p class="col-4">Site</p>
+      </div></div>
+  </li>
+</ul>
 </div>
+  <div class="intro">
+    <h3>About Me</h3>
+    <p>I started learning web development through freeCodeCamp. I am now a developer with a front-end speciality but good understanding of the back-end, too.<p>
+    <p>In my spare time, I am studying for a BSc (Hons) in Computing and IT from the Open University. I have completed the first year out of six. As well as undertaking personal coding projects (see above), I write a weekly blog and have an active Twitter account. </p>
+  </div>
+  
+  <h3>Contact Me</h3>
+  <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      
 
+  </div>
+    
+</form>
+  <button type="button" class="btn btn-light submit">Submit</button>
+  <div class="row justify-content-center footy">
+  <div class="col"><i class="fab fa-twitter-square"></i>
+</div>
+  <div class="col"><i class="fab fa-github-square"></i></div>
+  <div class="col"><i class="fab fa-wordpress"></i></div>
+  <div class="col"><i class="fab fa-linkedin"></i></div>
+</div>
+  
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/de2b0ad954.js" crossorigin="anonymous"></script>
 
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="messaround.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
-</body>
+  </body>
 </html>
