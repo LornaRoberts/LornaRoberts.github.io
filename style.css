@@ -1,0 +1,94 @@
+body{
+  overflow: hidden;
+  color:#293241;
+  background-color: #3d5a80;
+  font-family: 'Raleway', sans-serif;
+}
+
+.projects{
+  text-align: center;
+  min-height: 100vh;
+  width: 80vw;
+  Margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.contact{
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 10vh;
+}
+
+.card{
+  padding: 20px;
+  margin-bottom: 10vh;
+  background-color: #ee6c4d!important;
+  }
+
+.flex-container{
+  display: flex;
+}
+
+.hero-body{
+  height: 100vh;
+}
+
+h1{
+  font-family: 'Leckerli One', cursive;
+  font-size: 4em!important;
+  color: #293241!important;
+}
+
+h2{
+  color: #e0fbfc!important;
+}
+
+
+.navbar-item{
+  color:#293241 !important;
+}
+
+label{
+  color:#293241 !important;
+
+}
+
+.buffer{
+  height: 15vh;
+}
+
+.table{
+  background-color: #98c1d9!important;
+  color:#293241!important;
+  text-align: center;
+  
+}
+
+
+
+a:hover{
+  background-color: #ee6c4d!important;
+}
+
+.fab{
+  font-size: 2em;
+  margin: 10vh 10vw 10vh 10vw;
+  color: #98c1d9;
+   }
+
+ .nohover:hover {  
+  background-color: transparent!important;
+}
+
+
+
+.content{
+  color: black!important;
+}
+
+
+
+form{
+  width: 80vw;
+  margin: 0 auto;
+}
