@@ -1,39 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>No Fault Malts</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+  <title>Lorna Roberts</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Raleway&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/de2b0ad954.js" crossorigin="anonymous"></script>
+  
 </head>
-<body>
-  <div class="container mx-auto justify-text-center d-inlineblock">
-    <h1>No Fault Malts</h1>
-    <h2>Find a beer to match a food or vice versa!</h2>
-    <div class="interaction justify-content-center">
-      <button class="btn btn-outline-dark random btn-sm" id="randomBtn" name="data" onclick="getRandomBeer()" type="button">Choose a random beer</button><br>
-      <div id="pic"></div>
-      <div id="results"></div>
-      <form>
-        <div class="col-xs-7 col-sm-6 col-md-5 col-lg-4 mx-auto">
-          <label>Enter your desired food below</label> <input class="text form-control input-sm" id="food" placeholder="e.g. cheesecake" size="25"><br>
-          <button class="btn btn-outline-dark submit btn-sm" onclick="getFoodChoice();return false;" type="submit">Submit</button>
+
+<body >
+  <div class="hero is-medium">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="#projects">
+                Projects
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              
+            </div>
+          </div>
         </div>
-      </form>
+      </nav>
     </div>
-    <h2>Powered by the <a href="https://punkapi.com/documentation/v2" target="_blank">Punk API</a></h2>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Lorna Roberts<br>Front End Developer</h1>
+          <h2 class="subtitle">        
+             I am a junior front end developer from Perth in Scotland. I am looking my first role with a medium sized
+            company where I can learn and take on responsibility as I grow. I also bring strong communication and team soft skills
+            from previous careers in administration and social care. I am in the first year of a part-time
+                Open University BSc(Hons) in Computing and IT (Software). As well as web development, I enjoy film, 
+                travelling and art. Please take a look at my projects. If you would like to get in touch, send me an email,
+                details below.
+           </h2>
+      </div>
+      <div class="buffer"></div>
+      <div class="container">
+       <table class="table is-fullwidth">
+      <tr>
+        <td>HTML5</td>
+        <td>CSS3</td>
+        <td>JavaScript</td>
+        <td>NodeJS</td>
+      </tr>
+    </table>
+    </div>
+    </div>
+   
+    <div class="hero-foot">
+
+    </div>
+
   </div>
-  <script src="https://unpkg.com/axios/dist/axios.min.js">
-  </script> 
-  <script src="index.js">
-  </script> 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
-  </script> 
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-  </script> 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
-  </script>
+  <div class="buffer"></div>
+  <section class="projects" id="projects">
+  
+   <h2 class="title">Projects</h2>
+     <div class="flex-container">
+       <div class="columns is-multiline">
+         <div class="column is-half-tablet is-one-quarter-desktop">
+           <div class="card">
+           <div class="card-image">
+             <figure class="image is-4by3">
+             <img src="https://res.cloudinary.com/dytmcam8b/image/upload/v1583268803/bennyscreenshot_x0kk8i.jpg" alt="virtual pet screenshot">
+             </figure>
+           </div>
+           <div class="card-content">
+              <div class="media">
+                
+                <div class="media-content">
+                  <p class="title is-4">Virtual Pet</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+             Vanilla JavaScript tamagochi-like game. Created to practice loops and timers.</br>
+          <button class="btn"><a href="https://github.com/LornaRoberts/BennyTheBlob" target="_blank">Github</a></button> 
+              <button class="btn"><a href="https://codepen.io/JammyPiece/full/dBZaMP" target="_blank">CodePen</a></button> 
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half-tablet is-one-quarter-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+               <img src="https://bulma.io/images/placeholders/1280x960.png" alt=placeholder">
+              </figure>
+            </div>
+         <div class="card-content">
+           <div class="media">
+              
+              <div class="media-content">
+                <p class="title is-4">Beer Suggestor</p>
+                            </div>
+            </div>
+          </div>
+          <div class="content">
+            API accessed using AXIOM, Bootstrap interface. </br> <button class="btn"><a href="https://github.com/LornaRoberts/BeerAPImatcher">Github</a></button> 
+            <button class="btn"><a href="https://codepen.io/JammyPiece/full/RwrZPKW">CodePen</a></button> 
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-tablet is-one-quarter-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+            <img src="https://res.cloudinary.com/dytmcam8b/image/upload/v1592764219/portfolio%20page/restaurantpic.png" alt="restaurant site screenshot">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              
+              <div class="media-content">
+                <p class="title is-4">Restaurant Site</p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            Fully responsive sample site for restaurant utilising DOM and Bootstrap.</br> <button class="btn"><a href="https://github.com/LornaRoberts/ChineseRestaurantSite" target="_blank">Github</a></button> 
+            <button class="btn"><a href="https://codepen.io/JammyPiece/full/ZEQeWrE" target="_blank">CodePen</a></button> 
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-tablet is-one-quarter-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+            <img src="https://res.cloudinary.com/dytmcam8b/image/upload/v1593169235/screencapbeer_oxgtwa.png" alt="beer app screenshot">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              
+                <div class="media-content">
+                <p class="title is-4">E-commerce Site(in progress)</p>
+                              </div>
+              </div>
+            </div>
+            <div class="content">
+           JavaScript and NodeJS shopping site with backend.</br><button class="btn"><a href="https://github.com/LornaRoberts/EcommerceSite-in-progress" target="_blank">GitHub</a></button> 
+            <button class="btn"><a href="#">TBC</a></button> 
+            <br>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <h2 class="title" id="contact">Contact Me</h2>
+    
+  
+
+  <h2>If you would like to know more about me and my work, email me at lorna roberts 99 at gmail dot com. </br>
+  Alternatively, I can be contacted via Github or LinkedIn. </h2>
+    </div>
+
+<a class="link nohover" href="https://github.com/LornaRoberts" target="_blank"><i class="fab fa-github-square"></i></a>
+<a class="link nohover" href="https://www.linkedin.com/in/lorna-roberts/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </section>
+  
+  
+  
+  
+      
 </body>
 </html>
