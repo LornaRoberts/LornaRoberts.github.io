@@ -1,16 +1,29 @@
 body{
   overflow: hidden;
-  color:#293241;
-  background-color: #3d5a80;
+  color: rgb(7, 49, 97);
+  background-color: #98c1d9!important;
   font-family: 'Raleway', sans-serif;
 }
 
-.projects{
+.navbar-brand{
+  background-color: #03234d;
+}
+  #top{
+    background-color: #03234d;
+
+  }
+
+#projects{
+  color: rgb(6, 42, 83)!important;
   text-align: center;
   min-height: 100vh;
-  width: 80vw;
+  width: 100vw;
   Margin: 0 auto;
   margin-top: 10vh;
+  background-color: #98c1d9!important;
+  justify-content: center;
+  display: block!important;
+  
 }
 
 .contact{
@@ -21,41 +34,89 @@ body{
 
 .card{
   padding: 20px;
-  margin-bottom: 10vh;
-  background-color: #ee6c4d!important;
-  }
+  margin-bottom: 0px 20px 10vh 20px;
+  background-color: #d9e5f5!important;
+  height: 100%;
+    }
 
 .flex-container{
   display: flex;
+  text-align: center!important;
 }
 
+.for-projects{
+  padding: 10vh;
+}
 .hero-body{
   height: 100vh;
+  background-color: #03234d;
+
 }
+.navbar-menu{
+  background-color: #03234d;
+  
+  }
+
+ .navbar{
+    background-color: #03234d;
+  }
 
 h1{
   font-family: 'Leckerli One', cursive;
-  font-size: 4em!important;
-  color: #293241!important;
+  font-size: 2em!important;
+  color: rgb(172, 205, 241)!important;
 }
 
+p{
+  color: rgb(210, 227, 247)!important;
+  justify-content: left;
+  font-size:1em!important;
+
+}
+.title{
+  color: rgb(171, 202, 238)!important;
+
+}
+
+.title2{
+  color: rgb(10, 34, 61)!important;
+  margin-bottom: 2vh;
+
+}
 h2{
-  color: #e0fbfc!important;
+  color: rgb(10, 34, 61)!important;
+
+  font-size:1.5em!important;
+
 }
 
 
 .navbar-item{
-  color:#293241 !important;
+  color:rgb(199, 211, 224)!important;
 }
 
 label{
   color:#293241 !important;
+}
 
+#table{
+  margin-top: -20px;
+  font-size: 1em;
+  padding: 0!important;
 }
 
 .buffer{
-  height: 15vh;
+  height: 10vh;
+  background-color: #98c1d9!important;
+
 }
+
+.buffer1{
+    height: 10vh;
+    background-color: #03234d;
+    
+    }  
+  
 
 .table{
   background-color: #98c1d9!important;
@@ -67,13 +128,13 @@ label{
 
 
 a:hover{
-  background-color: #ee6c4d!important;
+  background-color: #f2f53a!important;
 }
 
 .fab{
-  font-size: 2em;
+  font-size: 3em;
   margin: 10vh 10vw 10vh 10vw;
-  color: #98c1d9;
+  color: #031d2c;
    }
 
  .nohover:hover {  
@@ -91,4 +152,16 @@ a:hover{
 form{
   width: 80vw;
   margin: 0 auto;
+}
+
+.container{
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo{
+  border-radius: 100%;
+  width: 10vw;
+  display: inline-block;
 }
