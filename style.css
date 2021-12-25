@@ -75,7 +75,7 @@ p{
 }
 
 h3 {
-  color: rgb(171, 202, 238)!important;
+  color: rgb(10, 34, 61)!important;
   justify-content: left;
   font-size:1em!important;
 }
@@ -171,4 +171,8 @@ form{
   border-radius: 100%;
   width: 10vw;
   display: inline-block;
+}
+
+ul {
+  list-style-type: circle;
 }
